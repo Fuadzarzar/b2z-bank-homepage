@@ -1,0 +1,43 @@
+@import url('./style.css');
+
+@media only screen and (max-width: 320px) {
+    
+    .title-home {
+        font-size: 1.5rem;
+    }
+
+    .subtitle-home {
+        font-size: .8rem;
+        line-height: 1.6em;
+        color: var(--white-beach);
+        margin: .4rem 0;
+}
+
+    #btn-account {
+        width: 120px;
+        height: 50px;
+        display: flex;
+    }
+
+    .card-tittle p {
+        color: var(--black-secondary);
+        font-size: 1.5rem;
+        line-height: 1.3em;
+        text-align: left;
+    }
+
+    .content-credit-card {
+        height: 350px;
+    }
+
+    .content-credit-card img {
+        top: 15%;
+        animation-name: cardFlutter;
+        animation-timing-function:cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        animation-duration: 3s;
+        animation-fill-mode: backwards;
+        animation-iteration-count: infinite;
+        width: 420px;
+    }
+
+}

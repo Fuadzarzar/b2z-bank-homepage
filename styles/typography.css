@@ -1,0 +1,24 @@
+@import './style.css';
+
+.f-16 {
+    font-size: var(--font-16) !important;
+}
+
+.menu-text {
+    font-size: 0.8rem;
+    color: white;
+}
+
+.head-text{
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.3em;
+    overflow-wrap: break-word;
+}
+
+.c-white{
+    color: var(--white-coffee);
+}
+.c-black{
+    color: var(--black-primary);
+}

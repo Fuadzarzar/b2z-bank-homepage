@@ -1,0 +1,433 @@
+:root {
+    --black-primary: #000;
+    --black-secondary: #050505;
+    --white-coffee: #fafafa;
+    --white-coffee-break: #E8E8E8;
+    --white-coffee-morning: #E8E8F0;
+    --white-coffee-evening: #e8e8f0d8;
+    --white-beach: #A8B0B0;
+    --primary-bank: #ff7f16;
+
+    --font-16: 1.6rem;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
+    margin: 0px;
+    outline: none;
+    padding: 0px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+    color: var(--primary-bank);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body, html {
+    background: var(--black-secondary);
+    height: 100vh;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    overflow-x: hidden;
+}
+
+header {
+    align-items: center;
+    background: var(--black-secondary);
+    border-bottom: solid 1px #eeeeee07;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    padding: 0 2rem;
+    position: absolute;
+    width: 100vw;
+    z-index: 99;
+}
+
+#menu {
+    align-items: center;
+    border-radius: .5rem;
+    border: solid 1px rgba(255, 255, 255, 0.082);
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    opacity: 0.8;
+    padding: 1rem;
+    width: 100px;
+}
+
+#menu img {
+    width: 20px;
+}
+
+#logo-content {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    position: relative;
+}
+
+#logo-content img {
+    height: 22px;
+    position: absolute;
+}
+
+.content-home {
+    padding: 8rem 2rem 1rem 2rem;
+    position: relative;
+    width: 100%;
+}
+
+.waves-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+#background {
+    background-image: url('/assets/images/80532.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    opacity: .5;
+    position: absolute;
+    transform: scale(2);
+    top: 0;
+    width: 100%;
+}
+
+.description{
+    color: var(--white-beach);
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.8em;
+    margin: .5rem 0;
+}
+
+.content-button {
+    margin: 2rem 0;
+}
+
+#btn-our-products {
+    align-items: center;
+    background: var(--primary-bank);
+    border-radius: 0.5rem;
+    color: white;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    width: 180px;
+}
+
+#btn-our-products p {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.content-credit-card {
+    align-items: center;
+    border-radius: 3rem 3rem 0rem 3rem;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: start;
+    background: var(--white-coffee);
+    background-image: url('/assets/images/Prancheta63.png');
+    background-position-y: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+}
+
+.content-credit-card::before {
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 50px 50px 0 24px var(--white-coffee);
+    content: "";
+    height: 70px;
+    position: absolute;
+    transform: rotate(-12deg);
+    top: -70.8px;
+    right: -5px;
+    width: 90px;
+}
+
+.creditCard-text {
+    padding: 2rem 2rem;
+}
+
+.content-credit-card img {
+    animation-name: cardFlutter;
+    animation-timing-function:cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    top: 25%;
+    max-width: 350px;
+    position: absolute;
+}
+
+#card-benefit {
+    height: auto;
+    padding: 2rem 2rem 1rem 2rem;
+    position: relative;
+    width: 100%;
+}
+
+.benefit-boxes {
+    width: 100%;
+}
+
+.featured-text {
+    color: var(--primary-bank);
+}
+
+.benefit-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.cards {
+    align-items: center;
+    background: var(--black-secondary);
+    border-radius: .8rem;
+    border: solid 1px #ffffff18;
+    display: flex;
+    justify-content: space-between;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    padding: 1rem;
+    transition: 0.2s;
+    user-select: none;
+    width: 100%;
+}
+
+
+
+.cards:hover {
+    border: solid 1px var(--primary-bank);
+    transition: 0.2s;
+}
+
+.shop-icon {
+    align-items: center;
+    border-right: solid 1px #eeeeee09;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: start;
+}
+
+.shop-icon img {
+    width: 30px;
+}
+
+.benefit-tittle {
+    color: var(--white-coffee-evening);
+    padding: 0 1rem;
+}
+
+.benefit-tittle p {
+    font-weight: 300;
+    line-height: 1.5rem;
+    font-size: 0.85em;
+    overflow-wrap: break-word;
+}
+
+.btn-more  {
+    align-items: center;
+    border: solid 1px rgba(255, 255, 255, 0.082);
+    border-radius: .8rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    transition: 0.2s;
+    width: 100%;
+}
+
+.btn-more:hover {
+    background: var(--white-coffee-break);
+    box-shadow: none;
+    transition: 0.2s;
+    outline: none;
+    user-select: none;
+}
+
+.btn-more:hover > p{
+    color: var(--black-secondary);
+    font-weight: 500;
+}
+
+.btn-more p {
+    color: var(--white-coffee-break);
+    font-weight: 300;
+    font-size: .9em;
+    margin-right: 1rem;
+}
+
+.btn-more img {
+    opacity: .8;
+    width: 25px;
+}
+
+#investiments-content {
+    background: var(--white-coffee);
+    padding: 1rem 2rem;
+    border-radius: 1.8rem;
+}
+
+.title-investiments {
+    font-size: var(--font-16);
+    line-height: 2.3rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+#btn-invest {
+    align-items: center;
+    background: var(--black-secondary);
+    border-radius: 0.5rem;
+    color: var(--white-coffee);
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    margin: 1rem 0;
+    height: 60px;
+    transition: 0.2s;
+}
+
+#btn-invest:hover {
+    background: var(--primary-bank);
+    color: var(--white-coffee);
+    transition: 0.2s;
+    opacity: 9;
+}
+
+#btn-invest p {
+    font-size: 1rem;
+}
+
+#investiments {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+#investiments img {
+    width: 100%;
+}
+
+#hand-smart {
+    position: relative;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 2rem 0 2rem;
+    width: 100%;
+}
+
+
+.white-c {
+    color: var(--white-coffee-break);
+    font-weight: 500;
+}
+
+.black-z {
+    color: black;
+    font-weight: 800;
+}
+
+.woman-btz {
+    width: 100%;
+    margin-bottom: 1rem;
+    z-index: 2;
+
+}
+
+.hand-img-content {
+    width: 100%;
+    height: 65vh;
+}
+
+.hand-image {
+    position: absolute;
+    bottom: 0;
+    height: 70%;
+    z-index: 2;
+}
+
+.bg-btzelas {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    opacity: .1;
+}
+
+.btzelas-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 2rem;
+    width: 100%;
+    border-radius: 1.8rem;
+    height: auto;
+    background: var(--primary-bank);
+}
+
+#btn-btzelas {
+    align-items: center;
+    background: var(--black-primary);
+    border-radius: 0.5rem;
+    color: white;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.btzelas-title {
+    text-align: left;
+}
+
+/* html {
+    overflow-x: hidden;
+} */
+
+@keyframes cardFlutter {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: translate3d(8px, -5%, 1em);
+    }
+
+   
+}
