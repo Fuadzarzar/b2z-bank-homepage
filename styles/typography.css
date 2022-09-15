@@ -1,14 +1,40 @@
 @import './style.css';
 
+.f-22 {
+    font-size: var(--font-22) !important;
+}
+
 .f-16 {
     font-size: var(--font-16) !important;
 }
 
-.menu-text {
-    font-size: 0.8rem;
-    color: white;
+.f-14 {
+    font-size: var(--font-14) !important;
 }
 
+.f-12 {
+    font-size: var(--font-12) !important;
+    opacity: .8;
+}
+
+
+
+
+/* ========== Fonts colors */
+
+
+.c-white{
+    color: var(--white-coffee);
+}
+.c-black{
+    color: var(--black-primary);
+}
+
+.c-orange {
+    color: var(--primary-bank);
+}
+
+/* ========== Fonts settings */
 .head-text{
     font-weight: 500;
     font-size: 1.8rem;
@@ -16,9 +42,17 @@
     overflow-wrap: break-word;
 }
 
-.c-white{
-    color: var(--white-coffee);
+.lw-85 {
+    line-height: 1.8rem !important;
 }
-.c-black{
-    color: var(--black-primary);
+
+.fw-500 {
+    font-weight: 500 !important;
+}
+
+.menu-text{
+    font-weight: 300;
+    line-height: 1.5rem;
+    font-size: 0.85em;
+    overflow-wrap: break-word;
 }

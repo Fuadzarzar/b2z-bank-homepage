@@ -9,63 +9,91 @@
     --primary-bank: #ff7f16;
 
     --font-16: 1.6rem;
+    --font-14: 1.4rem;
+    --font-22: 2.2rem;
 }
 
-* {
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif, Arial, Helvetica, sans-serif;
-    margin: 0px;
-    outline: none;
-    padding: 0px;
-    -webkit-tap-highlight-color: transparent;
+.bg-orange {
+    background: var(--primary-bank);
+}
+.bg-black {
+    background: var(--black-primary);
+}
+.bg-white {
+    background: var(--white-coffee);
 }
 
-::selection {
-    color: var(--primary-bank);
+
+/* ====== Margins and Paddings ====== */
+
+.margin-b {
+    margin-bottom: 1rem;
+}
+.margin-b2x {
+    margin-bottom: 2rem;
 }
 
-::-webkit-scrollbar {
-    width: 0px;
+.margin-l {
+    margin-left: 1rem;
 }
 
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
-    -webkit-tap-highlight-color: transparent;
+.pd-2x {
+    padding: 2rem;
 }
 
-body, html {
-    background: var(--black-secondary);
-    height: 100vh;
-    text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
-    overflow-x: hidden;
+/* ====== Icons ====== */
+.s25px {
+    width: 25px;
+}
+
+/* ====== Sizes ====== */
+
+.w-100 {
+    width: 100% !important;
+}
+
+/* ====== DEFAULT ====== */
+
+.d-flex-aCenter {
+    display: flex;
+    align-items: center;
+}
+
+.justifyC-spaceB {
+    justify-content:    space-between;
+}
+
+.content-credit-card, #hand-smart, .btzelas-content {
+    flex-direction: column; 
 }
 
 header {
-    align-items: center;
     background: var(--black-secondary);
     border-bottom: solid 1px #eeeeee07;
-    display: flex;
     height: 70px;
-    justify-content: space-between;
     padding: 0 2rem;
     position: absolute;
     width: 100vw;
     z-index: 99;
 }
 
+
+.button {
+    border-radius: 0.5rem;
+    height: 60px;
+    justify-content: center;
+    width: auto;
+    padding: 2rem;
+}
+
+
 #menu {
-    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
     border-radius: .5rem;
-    border: solid 1px rgba(255, 255, 255, 0.082);
-    display: flex;
+    border: solid 1px #ffffff1d;
     height: 40px;
-    justify-content: space-between;
     opacity: 0.8;
-    padding: 1rem;
     width: 100px;
 }
 
@@ -74,76 +102,33 @@ header {
 }
 
 #logo-content {
-    align-items: center;
-    display: flex;
     height: 100%;
     position: relative;
 }
 
 #logo-content img {
     height: 22px;
-    position: absolute;
 }
 
 .content-home {
+    background-image: url("../assets/images/waveshites.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 8rem 2rem 1rem 2rem;
     position: relative;
-    width: 100%;
 }
 
 .waves-bg {
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 0;
     height: 100%;
 }
 
-#background {
-    background-image: url('/assets/images/80532.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 100%;
-    opacity: .5;
-    position: absolute;
-    transform: scale(2);
-    top: 0;
-    width: 100%;
-}
-
-.description{
-    color: var(--white-beach);
-    font-weight: 300;
-    font-size: 1rem;
-    line-height: 1.8em;
-    margin: .5rem 0;
-}
-
-.content-button {
-    margin: 2rem 0;
-}
-
-#btn-our-products {
-    align-items: center;
-    background: var(--primary-bank);
-    border-radius: 0.5rem;
-    color: white;
-    display: flex;
-    height: 60px;
-    justify-content: center;
-    width: 180px;
-}
-
-#btn-our-products p {
-    font-weight: 500;
-    font-size: 1rem;
-}
-
 .content-credit-card {
-    align-items: center;
-    border-radius: 3rem 3rem 0rem 3rem;
-    display: flex;
-    flex-direction: column;
+    border-radius: 2rem 2rem 0rem 2rem;
     height: 400px;
     justify-content: start;
     background: var(--white-coffee);
@@ -151,25 +136,22 @@ header {
     background-position-y: 100px;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     width: 100vw;
+    position: relative;
 }
 
 .content-credit-card::before {
     background: transparent;
-    border-radius: 50%;
-    box-shadow: 50px 50px 0 24px var(--white-coffee);
+    border-radius: 40%;
+    box-shadow: 40px 50px 0 24px var(--white-coffee);
     content: "";
-    height: 70px;
+    height: 72px;
     position: absolute;
+    z-index: 1;
     transform: rotate(-12deg);
     top: -70.8px;
     right: -5px;
     width: 90px;
-}
-
-.creditCard-text {
-    padding: 2rem 2rem;
 }
 
 .content-credit-card img {
@@ -178,42 +160,21 @@ header {
     animation-duration: 3s;
     animation-fill-mode: backwards;
     animation-iteration-count: infinite;
-    top: 25%;
-    max-width: 350px;
-    position: absolute;
+    width: 20rem;
 }
 
 #card-benefit {
     height: auto;
-    padding: 2rem 2rem 1rem 2rem;
     position: relative;
-    width: 100%;
-}
-
-.benefit-boxes {
-    width: 100%;
-}
-
-.featured-text {
-    color: var(--primary-bank);
-}
-
-.benefit-content {
-    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    justify-content: space-between;
-    margin: 2rem 0;
 }
 
 .cards {
-    align-items: center;
     background: var(--black-secondary);
     border-radius: .8rem;
-    border: solid 1px #ffffff18;
-    display: flex;
-    justify-content: space-between;
+    border: solid 1px #ffffff21;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
     -khtml-user-select: none; /* Konqueror HTML */
@@ -222,203 +183,110 @@ header {
     padding: 1rem;
     transition: 0.2s;
     user-select: none;
-    width: 100%;
 }
-
-
 
 .cards:hover {
     border: solid 1px var(--primary-bank);
     transition: 0.2s;
 }
 
-.shop-icon {
-    align-items: center;
+.icon-benefit {
     border-right: solid 1px #eeeeee09;
     border-radius: 0.5rem;
     padding: 0.5rem;
-    display: flex;
     justify-content: start;
 }
 
-.shop-icon img {
+.icon-benefit img {
     width: 30px;
 }
 
-.benefit-tittle {
-    color: var(--white-coffee-evening);
-    padding: 0 1rem;
-}
-
-.benefit-tittle p {
-    font-weight: 300;
-    line-height: 1.5rem;
-    font-size: 0.85em;
-    overflow-wrap: break-word;
-}
-
-.btn-more  {
-    align-items: center;
+.button-all-benefit  {
+    background-color: (--white-coffee);
     border: solid 1px rgba(255, 255, 255, 0.082);
     border-radius: .8rem;
     cursor: pointer;
-    display: flex;
     justify-content: space-between;
-    padding: 1rem 1rem;
+    padding: 1rem 1.5rem;
     transition: 0.2s;
-    width: 100%;
-}
-
-.btn-more:hover {
-    background: var(--white-coffee-break);
-    box-shadow: none;
-    transition: 0.2s;
-    outline: none;
-    user-select: none;
-}
-
-.btn-more:hover > p{
-    color: var(--black-secondary);
-    font-weight: 500;
-}
-
-.btn-more p {
-    color: var(--white-coffee-break);
-    font-weight: 300;
-    font-size: .9em;
-    margin-right: 1rem;
-}
-
-.btn-more img {
-    opacity: .8;
-    width: 25px;
 }
 
 #investiments-content {
     background: var(--white-coffee);
-    padding: 1rem 2rem;
-    border-radius: 1.8rem;
-}
-
-.title-investiments {
-    font-size: var(--font-16);
-    line-height: 2.3rem;
-    font-weight: 500;
-    margin-top: 1rem;
-}
-
-#btn-invest {
-    align-items: center;
-    background: var(--black-secondary);
-    border-radius: 0.5rem;
-    color: var(--white-coffee);
-    display: flex;
-    padding: 2rem;
-    justify-content: center;
-    margin: 1rem 0;
-    height: 60px;
-    transition: 0.2s;
-}
-
-#btn-invest:hover {
-    background: var(--primary-bank);
-    color: var(--white-coffee);
-    transition: 0.2s;
-    opacity: 9;
-}
-
-#btn-invest p {
-    font-size: 1rem;
-}
-
-#investiments {
-    margin-top: 2rem;
-    width: 100%;
-}
-
-#investiments img {
-    width: 100%;
-}
-
-#hand-smart {
-    position: relative;
-    align-items: start;
+    border-radius: 3rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    height: auto;
+}
+
+#transaction-app {
+    align-items: start;
     padding: 2rem 2rem 0 2rem;
-    width: 100%;
-}
-
-
-.white-c {
-    color: var(--white-coffee-break);
-    font-weight: 500;
-}
-
-.black-z {
-    color: black;
-    font-weight: 800;
-}
-
-.woman-btz {
-    width: 100%;
-    margin-bottom: 1rem;
-    z-index: 2;
-
+    position: relative;
 }
 
 .hand-img-content {
-    width: 100%;
     height: 65vh;
 }
 
 .hand-image {
+    height: 70%;
     position: absolute;
     bottom: 0;
-    height: 70%;
     z-index: 2;
 }
 
-.bg-btzelas {
+.bg-b2zelas {
     position: absolute;
     height: 100%;
-    width: 100%;
     top: 0;
+}
+
+.btzelas-content::before {
+    background-image: linear-gradient(rgba(255, 132, 0, 0.273) 20%, rgb(255, 132, 0));
+    border-radius: 2rem;
+    bottom: 0;
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
     z-index: 1;
-    opacity: .1;
+}
+
+.b2zelas-index {
+    z-index: 3;
+
+}
+
+.b2zelas-description {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.button-100 {
+    width: 100%;
 }
 
 .btzelas-content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     position: relative;
-    padding: 2rem;
-    width: 100%;
-    border-radius: 1.8rem;
-    height: auto;
-    background: var(--primary-bank);
-}
-
-#btn-btzelas {
     align-items: center;
-    background: var(--black-primary);
-    border-radius: 0.5rem;
-    color: white;
+    background-image: url("../assets/images/woman-sitdown.jpg");
+    background-position-x: -400px;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    height: 60px;
-    justify-content: center;
-    padding: 2rem;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 1.8rem;
+    height: 100vh;
+    width: 100%;
 }
 
-.btzelas-title {
-    text-align: left;
-}
-
-/* html {
+html {
     overflow-x: hidden;
-} */
+}
 
 @keyframes cardFlutter {
     0% {
