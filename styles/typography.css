@@ -18,8 +18,6 @@
 }
 
 
-
-
 /* ========== Fonts colors */
 
 
@@ -34,13 +32,7 @@
     color: var(--primary-bank);
 }
 
-/* ========== Fonts settings */
-.head-text{
-    font-weight: 500;
-    font-size: 1.6rem;
-    line-height: 1.4em;
-    overflow-wrap: break-word;
-}
+
 
 .lw-85 {
     line-height: 1.8rem !important;
@@ -49,10 +41,13 @@
 .fw-500 {
     font-weight: 500 !important;
 }
-
-.menu-text{
-    font-weight: 300;
-    line-height: 1.5rem;
-    font-size: 0.85em;
-    overflow-wrap: break-word;
+.fw-600 {
+    font-weight: 600 !important;
 }
+.fw-700 {
+    font-weight: 700 !important;
+}
+
+
+
+

@@ -22,7 +22,7 @@
 <body>
     <header class="d-flex-aCenter justifyC-spaceB">
         <div id='logo-content' class="d-flex-aCenter">
-            <img src='./assets/logo/logo-b2zs.svg' alt='logo btz bank'>
+            <img id="logo" src='./assets/logo/logo-b2zs.svg' alt='logo btz bank'>
         </div>
         <div id='menu' class="d-flex-aCenter">
             <img src='./assets/images/list.png' alt='menu icon'>
@@ -30,76 +30,129 @@
         </div>
     </header>
 
-    <div class='content-home w-100'>
+  <div class='content-home'>
         <div>
-            <h1 class='head-text c-white margin-b'>
+            <h1 class='head-text c-white'>
                 Viva a experiência de estar no <strong>maior banco digital</strong>
             </h1>
-            <h2 class='menu-text c-white f-12 lw-85 margin-b2x'>Um banco flexível, com benefícios exclusivos, investimentos
+            <h2 class='sub-text c-white'>Um banco flexível, com benefícios exclusivos,
+                investimentos
                 e muito mais.
             </h2>
         </div>
 
-            <div class="d-flex-aCenter button bg-orange c-white margin-b">
-                <p>Abrir conta</p>
-            </div>
+        <div class="button bg-orange c-white">
+            <p>Abrir conta</p>
+        </div>
     </div>
 
-    <div class='content-credit-card d-flex-aCenter'>
-        <div class='pd-2x index-2'>
+    <div class='content-credit-card'>
+        <div class='index-2'>
             <p class="head-text c-black">Visa black coberto de <strong>vantagens</strong></p>
         </div>
-        <img src='./assets/images/creditcard-no-shad.png' alt='a black credit card'>
+        <img id="card-floating" src='./assets/images/creditcard-no-shad.png' alt='a black credit card'>
     </div>
 
-    <div id='card-benefit' class="pd-2x w-100">
+    <div id='card-benefit'>
         <div class='w-100'>
-            <p class='head-text margin-b c-white f-16'>Só quem é <strong><span class="c-orange">b2z
+            <p class='head-text c-white'>Só quem é <strong><span class="c-orange">b2z
                     </span></strong>consegue viver o <strong>extraordinário</strong></p>
         </div>
-        <div class='cards w-100'>
-            <div class='icon-benefit'>
+        <div class='advantage-content'>
+            <div class='advantage-icon'>
                 <img src='./assets/images/viagem.png' alt=''>
             </div>
             <div class='benefit-content'>
-                <p class="menu-text margin-l c-white"><strong>Esqueça as milhas!</strong> Até 100% OFF em passagens
+                <p class="margin-l c-white"><strong>Esqueça as milhas!</strong> Até 100% OFF em passagens
                     aéreas
                     em todo o território nacional.</p>
             </div>
         </div>
 
-        <div class='cards w-100'>
-            <div class='icon-benefit'>
+        <div class='advantage-content'>
+            <div class='advantage-icon'>
                 <img src='./assets/images/sacolas-de-compras.png' alt=''>
             </div>
             <div class='benefit-content'>
-                <p class="menu-text margin-l c-white">Compras online em lojas parceiras geram descontos de até 50% </p>
+                <p class="margin-l c-white">Compras online em lojas parceiras geram descontos de até 50% </p>
             </div>
         </div>
 
-        <div class='cards w-100'>
-            <div class='icon-benefit'>
+        <div class='advantage-content'>
+            <div class='advantage-icon'>
                 <img src='./assets/images/hotel.png' alt=''>
             </div>
             <div class='benefit-content'>
-                <p class="menu-text margin-l c-white">Reservas com 40% de desconto nos Hotéis mais exclusivos</p>
+                <p class="margin-l c-white">Reservas com 40% de desconto nos Hotéis mais exclusivos</p>
             </div>
         </div>
 
-        <div class='cards w-100'>
-            <div class='icon-benefit '>
+        <div class='advantage-content'>
+            <div class='advantage-icon '>
                 <img src='./assets/images/food.png' alt=''>
             </div>
             <div class='benefit-content'>
-                <p class="menu-text margin-l c-white">Muitos benefícios em nossos restaurantes parceiros.<br>
-<!--                     La Cocotte Bistrot - São Paulo.<br>
+                <p class="margin-l c-white">Muitos benefícios em nossos restaurantes parceiros.<br>
+                    <!--                     La Cocotte Bistrot - São Paulo.<br>
                     La Brasserie de La Mer - Natal.</p> -->
-            </div>
+        </div>
         </div>
 
-        <div class="button-all-benefit bg-white d-flex-aCenter w-100">
-            <p class="menu-text c-black fw-500">Ver todos os benefícios</p><img class="s25px"
+        <div class="button-all-benefit bg-white">
+            <p class="menu-text c-black">Ver todos os benefícios</p><img class="s25px"
                 src="./assets/images/more.png" alt="">
+        </div>
+    </div>
+
+
+
+    <div id="transaction-app">
+        <p class='head-text c-white'>Transações na palma da sua mão</p>
+        <p class='sub-text c-white'>Tenha a melhor experiência ao controlar suas transações dentro do nosso
+            App.
+        </p>
+        <div class="app-img-content">
+            <img class="app-image" src="./assets/images/b2z-app.png" alt="graphic of investiments">
+        </div>
+    </div>
+
+   <!--  CORRIGIR ABAIXO -->
+
+    <div class="juridic-account">
+        <div>
+            <p class='head-text strong-light c-black'>Abra sua conta PJ e faça sua empresa crescer.
+            </p>
+            <p class='sub-text c-black'>Seu negócio é importante para nós! Conheça os benefícios da conta
+                PJ.</p>
+        </div>
+
+        <div class="margin-b">
+            <img class="w-100" src="./assets/images/business-group.png" alt="">
+        </div>
+        <div class="margin-b">
+            <p class="fw-600 f-12 margin-b ">Benefícios:</p>
+            <ul class="">
+                <li class="list-set ">• 35 dias sem juros para cheque especial.</li>
+                <li class="list-set">• Receba na hora com as vendas no crédito à vista.</li>
+                <li class="list-set">• Capital de emergência com a menor taxa do mercado.</li>
+                <li class="list-set">• Sistema de vendas exclusivos, com NF, controle de estoque, balancete e mutio mais.</li>
+                <li class="list-set">• Máquineta de cartão sem mensalidade, com taxa de 1,68% no crédito e 1% no débito.</li>
+                <li class="list-set">• Emissão de boleto.</li>
+            </ul>
+        </div>
+        <div class="button bg-black c-white d-flex-aCenter w-100 margin-b">
+            <p>Ver todos os benefícios PJ</p>
+        </div>
+        <div>
+            <p class='head-text doc-text c-black'>Documentos necessários:
+            </p>
+            <ul>
+                <li class="list-set">• Documento de identificação com foto: RG, CNH, RNE ou Entidade de classe (OAB, CRM, CREA)
+                <li class="list-set">• Documento de constituição da empresa: Requerimento de empresário, Registro de constituição na junta
+                    comercial e/ou contrato social. </li>
+                <li class="list-set">• Para MEI não é necessário envio do documento</li>
+                <li class="list-set">• Celular ou computador com câmera</li>
+            </ul>
         </div>
     </div>
 
@@ -108,8 +161,8 @@
             <p class='head-text c-white btzelas-title f-22'><strong class="c-black">b2z</strong>Elas</p>
         </div>
         <div class="w-100 b2zelas-index b2zelas-description">
-            <p class='head-text c-white margin-b2x fw-500'>Um espaço exclusivo para mulheres empreendedoras ou que
-                estejam começando.
+            <p class='head-text c-white margin-b2x fw-500'>Um espaço exclusivo para mulheres que desejam se tornar
+                empreendedoras.
             </p>
             <div class="button bg-black c-white d-flex-aCenter w-100">
                 <p>Conhecer e empreender</p>
@@ -118,21 +171,10 @@
     </div>
     </div>
 
-    <div id="transaction-app" class="w-100">
-        <p class='head-text c-white f-16 margin-b'>Transações na palma da sua mão</p>
-        <p class='menu-text c-white f-12 lw-85'>Tenha a melhor experiência ao controlar suas transações dentro do nosso
-            App.
-        </p>
-        <div class="hand-img-content">
-            <img class="hand-image" src="./assets/images/b2z-app.png" alt="graphic of investiments">
-        </div>
-    </div>
-
     <div id="investiments-content" class="pd-2x">
         <p class="head-text c-black f-16 margin-b2x ">Você no controle total dos investimentos</p>
         <div id="investiments" class="margin-b2x">
-            <img class="w-100" src="./assets/images/graphic.png"
-                alt="gráficos simulando meses de investimento">
+            <img class="w-100" src="./assets/images/graphic.png" alt="gráficos simulando meses de investimento">
         </div>
         <div class="button bg-black c-white d-flex-aCenter">
             <p>Investir</p>
