@@ -10,11 +10,14 @@
     --white-beach: #A8B0B0;
     --primary-bank: #ff7f16;
 
-    --font-22: 2.2rem;
-    --font-16: 1.6rem;
-    --font-14: 1.4rem;
-    --font-12: 1.085rem;
-    --font-10: 0.8rem;
+    --font-45: 5.6rem;
+    --font-25: 1.6rem;
+    --font-22: 1.375rem;
+    --font-20: 1.25rem;
+    --font-16: 1rem;
+    --font-14: 0.875rem;
+    --font-12: 0.75rem;
+    --font-10: 0.625rem;
 
     --1x: 1rem;
     --2x: 2rem;
@@ -38,10 +41,6 @@
 }
 .margin-b2x {
     margin-bottom: 2rem;
-}
-
-.margin-l {
-    margin-left: var(--1x);
 }
 
 .pd-2x {
@@ -124,7 +123,6 @@ header {
     border-radius: 2rem;
     cursor: pointer;
     font-weight: 500;
-    margin-top: var(--1x);
     justify-content: space-between;
     padding: 0.85rem 1.5rem;
     transition: 0.2s;
@@ -134,7 +132,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: var(--font-12);
+    font-size: var(--font-16);
     border-radius: 2rem;
     height: 48px;
     justify-content: center;
@@ -159,8 +157,8 @@ header {
 .content-credit-card {
     display: flex;
     align-items: center;
-    border-radius: 2rem 2rem 0rem 2rem;
-    height: 400px;
+    border-radius: 1.8rem;
+    height: 350px;
     justify-content: start;
     background: var(--white-coffee);
     background-image: url('/assets/images/Prancheta63.png');
@@ -286,6 +284,7 @@ header {
 
 
 /* ====== SECTION GIRLS ====== */
+
 .btzelas-content {
     position: relative;
     align-items: center;
@@ -330,12 +329,17 @@ header {
 
 /* ===== TEXTS SETTINGS ===== */
 
-.head-text{
+.head-text-content {
+    overflow-y: hidden;
+
+}
+
+.head-text {
     font-weight: 500;
-    font-size: 1.6rem;
+    font-size: var(--font-25);
     line-height: 1.4em;
-    overflow-wrap: break-word;
     margin-bottom: var(--1x);
+    overflow-y: hidden;
 }
 
 .strong-light {
@@ -346,19 +350,25 @@ header {
 .sub-text{
     font-weight: 400;
     line-height: 1.85rem;
-    font-size: var(--font-12);
+    font-size: var(--font-16);
     opacity: .85;
     margin-bottom: var(--2x);
     overflow-wrap: break-word;
     color: var(--white-coffee);
 }
 
+.advantage-text {
+    margin-left: var(--1x);
+    font-size: var(--font-14);
+}
+
 .doc-text {
-    font-size: 1.2rem;
+    font-size: var(--font-20);
+    font-weight: 600;
 
 }
 
-.list-set {
+.list-text {
     line-height: 1.6rem;
 }
 
