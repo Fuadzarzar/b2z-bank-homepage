@@ -23,6 +23,10 @@
     --2x: 2rem;
 }
 
+#fill {
+    width: 50%;
+}
+
 .bg-orange {
     background: var(--primary-bank);
 }
@@ -85,9 +89,7 @@ header {
     border-bottom: solid 1px #eeeeee17;
     height: 64px;
     padding: 0 2rem;
-    position: absolute;
     width: 100vw;
-    z-index: 99;
 }
 
 #logo {
